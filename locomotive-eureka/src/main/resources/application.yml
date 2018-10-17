@@ -1,0 +1,25 @@
+server:
+  port: 6001
+
+spring:
+  application:
+    name: locomotive-eureka
+
+  security:
+    user:
+      name: zez
+      password: zez
+
+eureka:
+  instance:
+    hostname: localhost
+
+  server:
+    #测试环境禁用自我保护模式
+    enable-self-preservation: false
+
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultone: http://zez:zez@${eureka.instance.hostname}:${server.port}/eureka/
