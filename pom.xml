@@ -20,6 +20,9 @@
 
     <modules>
         <module>locomotive-eureka</module>
+        <module>locomotive-common</module>
+        <module>locomotive-zuul</module>
+        <module>locomotive-administrator</module>
     </modules>
 
     <properties>
